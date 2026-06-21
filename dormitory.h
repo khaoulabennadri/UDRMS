@@ -17,16 +17,13 @@ public:
 
     Dormitory();
     Dormitory(QString name,int capacity);
-
-    // Getters
     QString getName() const;
     int getCapacity() const;
 
-    // Setters
     void setName(QString name);
     void setCapacity(int capacity);
 
     Restaurant& getRestaurant();
 };
 
-#endif // DORMITORY_H
+#endif
