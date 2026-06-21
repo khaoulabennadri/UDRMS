@@ -1,0 +1,1399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1050</width>
+    <height>965</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="styleSheet">
+       <string notr="true">QMainWindow{
+    background-color:#f8f4ff;
+}
+
+QTabWidget::pane{
+    border:2px solid #d8b4fe;
+    border-radius:15px;
+    background:white;
+}
+QWidget {
+    background-image: url(&quot;C:\Users\admin\Pictures\Screenshots\Screenshot 2026-06-18 003102.png&quot;);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+QTabBar::tab{
+    background:#f3e8ff;
+    color:#6b21a8;
+    padding:10px;
+    min-width:120px;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    font-weight:bold;
+}
+
+QTabBar::tab:selected{
+    background:#c084fc;
+    color:white;
+}
+
+QGroupBox{
+    border:2px solid #d8b4fe;
+    border-radius:15px;
+    margin-top:10px;
+    font-weight:bold;
+    color:#7e22ce;
+    background:white;
+}
+
+QGroupBox::title{
+    subcontrol-origin: margin;
+    left:10px;
+    padding:0 5px;
+}
+
+QLineEdit{
+    border:2px solid #d8b4fe;
+    border-radius:10px;
+    padding:6px;
+    background:#fcfaff;
+    font-size:11pt;
+}
+
+QSpinBox{
+    border:2px solid #d8b4fe;
+    border-radius:10px;
+    padding:6px;
+    background:#fcfaff;
+}
+
+QPushButton{
+    background-color:#c084fc;
+    color:white;
+    border:none;
+    border-radius:12px;
+    padding:10px;
+    font-size:12pt;
+    font-weight:bold;
+}
+
+QPushButton:hover{
+    background-color:#a855f7;
+}
+
+QTableWidget{
+    border:2px solid #d8b4fe;
+    border-radius:12px;
+    background:white;
+    gridline-color:#ede9fe;
+}
+
+QHeaderView::section{
+    background-color:#c084fc;
+    color:white;
+    padding:8px;
+    border:none;
+    font-weight:bold;
+}
+QWidget#tab_7{
+    border-image: url(&quot;C:\Users\admin\Pictures\Screenshots\Screenshot 2026-06-18 003102.png&quot;) 0 0 0 0 stretch stretch;
+}
+
+setWindowTitle(&quot;💜 UDRMS - University Dormitory Management System&quot;);</string>
+      </property>
+      <property name="currentIndex">
+       <number>3</number>
+      </property>
+      <widget class="QWidget" name="Students">
+       <attribute name="title">
+        <string>Students 👨‍🎓</string>
+       </attribute>
+       <widget class="QLineEdit" name="lineEdit_name">
+        <property name="geometry">
+         <rect>
+          <x>11</x>
+          <y>38</y>
+          <width>156</width>
+          <height>42</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="spinBox_room">
+        <property name="geometry">
+         <rect>
+          <x>175</x>
+          <y>163</y>
+          <width>70</width>
+          <height>38</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btn_addStudent">
+        <property name="geometry">
+         <rect>
+          <x>535</x>
+          <y>380</y>
+          <width>191</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Add student</string>
+        </property>
+       </widget>
+       <widget class="QTableWidget" name="tableWidget_students">
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>0</y>
+          <width>501</width>
+          <height>192</height>
+         </rect>
+        </property>
+        <column>
+         <property name="text">
+          <string>Name</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Age</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>ID</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>RoomNumber</string>
+         </property>
+        </column>
+       </widget>
+       <widget class="QSpinBox" name="spinBox_age">
+        <property name="geometry">
+         <rect>
+          <x>93</x>
+          <y>217</y>
+          <width>70</width>
+          <height>38</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_id">
+        <property name="geometry">
+         <rect>
+          <x>11</x>
+          <y>114</y>
+          <width>156</width>
+          <height>42</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label">
+        <property name="geometry">
+         <rect>
+          <x>11</x>
+          <y>11</y>
+          <width>123</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Enter stdent name:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_2">
+        <property name="geometry">
+         <rect>
+          <x>11</x>
+          <y>87</y>
+          <width>56</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Enter ID:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_11">
+        <property name="geometry">
+         <rect>
+          <x>11</x>
+          <y>163</y>
+          <width>157</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>14</pointsize>
+          <italic>true</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Room Number</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_12">
+        <property name="geometry">
+         <rect>
+          <x>11</x>
+          <y>208</y>
+          <width>42</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>14</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Age</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_3">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>270</y>
+          <width>171</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>14</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Academic Year</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="spinBox_academicYear">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>270</y>
+          <width>71</width>
+          <height>31</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btn_deleteStudent">
+        <property name="geometry">
+         <rect>
+          <x>530</x>
+          <y>450</y>
+          <width>191</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Remove Student</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_3">
+       <attribute name="title">
+        <string>Home  🏠</string>
+       </attribute>
+       <widget class="QLabel" name="label_4">
+        <property name="geometry">
+         <rect>
+          <x>700</x>
+          <y>120</y>
+          <width>63</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap>../../../../Pictures/Screenshots/Screenshot 2026-06-17 205736.png</pixmap>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_logo">
+        <property name="geometry">
+         <rect>
+          <x>680</x>
+          <y>70</y>
+          <width>101</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_15">
+        <property name="geometry">
+         <rect>
+          <x>420</x>
+          <y>210</y>
+          <width>601</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>18</pointsize>
+          <italic>true</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 239, 246);
+color: rgb(110, 86, 170);</string>
+        </property>
+        <property name="text">
+         <string>University Dormitory Management System</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_16">
+        <property name="geometry">
+         <rect>
+          <x>520</x>
+          <y>240</y>
+          <width>361</width>
+          <height>281</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+          <italic>true</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(170, 85, 127);</string>
+        </property>
+        <property name="text">
+         <string>✔ Student Management
+✔ Room Allocation
+✔ Dormitory Management
+✔ Restaurant Services
+✔ Student Search</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btn_saveData">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>410</y>
+          <width>151</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(170, 0, 127);</string>
+        </property>
+        <property name="text">
+         <string>Save data </string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btn_loadData">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>480</y>
+          <width>151</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(170, 0, 127);</string>
+        </property>
+        <property name="text">
+         <string>Load data</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_4">
+       <attribute name="title">
+        <string>Rooms 🛏️</string>
+       </attribute>
+       <widget class="QLineEdit" name="lineEdit_roomNumber">
+        <property name="geometry">
+         <rect>
+          <x>250</x>
+          <y>10</y>
+          <width>181</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>181</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>11</pointsize>
+          <underline>true</underline>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(216, 222, 255);</string>
+        </property>
+        <property name="text">
+         <string>Room Number </string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="comboBox">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>90</y>
+          <width>111</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <item>
+         <property name="text">
+          <string>Single</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Double</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Shared</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string/>
+         </property>
+        </item>
+       </widget>
+       <widget class="QPushButton" name="btn_addRoom">
+        <property name="geometry">
+         <rect>
+          <x>620</x>
+          <y>10</y>
+          <width>151</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(224, 237, 255);
+border-color: rgb(170, 170, 127);</string>
+        </property>
+        <property name="text">
+         <string>Add room</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btn_deleteRoom">
+        <property name="geometry">
+         <rect>
+          <x>620</x>
+          <y>70</y>
+          <width>151</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(224, 237, 255);</string>
+        </property>
+        <property name="text">
+         <string>Delete Room</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btn_updateRoom">
+        <property name="geometry">
+         <rect>
+          <x>620</x>
+          <y>130</y>
+          <width>151</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(205, 236, 255);
+background-color: rgb(219, 233, 255);</string>
+        </property>
+        <property name="text">
+         <string>Update Room</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_clearRoom">
+        <property name="geometry">
+         <rect>
+          <x>620</x>
+          <y>200</y>
+          <width>141</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(210, 226, 255);</string>
+        </property>
+        <property name="text">
+         <string>Clear  Fields</string>
+        </property>
+       </widget>
+       <widget class="QTableWidget" name="tableWidget_rooms">
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>260</y>
+          <width>761</width>
+          <height>211</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+QTableView {
+    background-color: #ffffff;
+    gridline-color: #000000;
+    border: 1px solid #000000;
+}
+
+QHeaderView::section {
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-right: 1px solid #ffffff;
+    padding: 5px;
+}
+</string>
+        </property>
+        <property name="tabKeyNavigation">
+         <bool>false</bool>
+        </property>
+        <property name="showDropIndicator" stdset="0">
+         <bool>false</bool>
+        </property>
+        <property name="dragDropOverwriteMode">
+         <bool>false</bool>
+        </property>
+        <property name="alternatingRowColors">
+         <bool>true</bool>
+        </property>
+        <property name="selectionMode">
+         <enum>QAbstractItemView::SelectionMode::SingleSelection</enum>
+        </property>
+        <property name="selectionBehavior">
+         <enum>QAbstractItemView::SelectionBehavior::SelectRows</enum>
+        </property>
+        <property name="showGrid">
+         <bool>true</bool>
+        </property>
+        <property name="sortingEnabled">
+         <bool>true</bool>
+        </property>
+        <column>
+         <property name="text">
+          <string>Romm No</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Students</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>capacity</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Occupied</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Free Spots</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Status</string>
+         </property>
+        </column>
+       </widget>
+       <widget class="QSpinBox" name="spinBox_roomCapacity">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>180</y>
+          <width>121</width>
+          <height>31</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_10">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>20</y>
+          <width>291</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>14</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Enter Room Number</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_17">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>150</y>
+          <width>151</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>enter capacity </string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_5">
+       <attribute name="title">
+        <string>Dorms 🏢 </string>
+       </attribute>
+       <widget class="QLabel" name="label_8">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>30</y>
+          <width>231</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>SimSun</family>
+          <pointsize>18</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Dormitory name</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_dormName">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>70</y>
+          <width>181</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-color: rgb(85, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>l</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btn_addDorm">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>150</y>
+          <width>171</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+          <italic>true</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(170, 85, 0);</string>
+        </property>
+        <property name="text">
+         <string>Add dorm</string>
+        </property>
+       </widget>
+       <widget class="QTableWidget" name="tableWidget_dorms">
+        <property name="geometry">
+         <rect>
+          <x>680</x>
+          <y>360</y>
+          <width>381</width>
+          <height>221</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 237, 222);
+background-color: rgb(255, 252, 207);</string>
+        </property>
+        <attribute name="horizontalHeaderVisible">
+         <bool>true</bool>
+        </attribute>
+        <attribute name="horizontalHeaderCascadingSectionResizes">
+         <bool>true</bool>
+        </attribute>
+        <attribute name="horizontalHeaderMinimumSectionSize">
+         <number>50</number>
+        </attribute>
+        <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+         <bool>true</bool>
+        </attribute>
+        <attribute name="horizontalHeaderStretchLastSection">
+         <bool>true</bool>
+        </attribute>
+        <column>
+         <property name="text">
+          <string>DormitoryName</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>restaurant </string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>capacity</string>
+         </property>
+        </column>
+       </widget>
+       <widget class="QLabel" name="label_9">
+        <property name="geometry">
+         <rect>
+          <x>320</x>
+          <y>40</y>
+          <width>131</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+          <italic>true</italic>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(170, 85, 127);</string>
+        </property>
+        <property name="text">
+         <string>Capacity</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="spinBox_capacity">
+        <property name="geometry">
+         <rect>
+          <x>460</x>
+          <y>40</y>
+          <width>101</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="maximum">
+         <number>5000</number>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btn_viewRestaurant">
+        <property name="geometry">
+         <rect>
+          <x>672</x>
+          <y>60</y>
+          <width>181</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Segoe UI Black</family>
+          <pointsize>12</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(170, 47, 76);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>View Restaurnt</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_6">
+       <attribute name="title">
+        <string> Statistics 📊 </string>
+       </attribute>
+       <widget class="QPushButton" name="btn_showStats">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>30</y>
+          <width>181</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 208, 239);</string>
+        </property>
+        <property name="text">
+         <string>Show Statistics </string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btn_clearStats">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>80</y>
+          <width>181</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 213, 242);</string>
+        </property>
+        <property name="text">
+         <string>Clear</string>
+        </property>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_stats">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>220</y>
+          <width>321</width>
+          <height>341</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>14</pointsize>
+          <italic>false</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="title">
+         <string>  📊 Statistics</string>
+        </property>
+        <widget class="QLabel" name="label_totalStudents">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>60</y>
+           <width>151</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Total Students</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_totalRooms">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>100</y>
+           <width>141</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Total Rooms</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_fullRooms">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>150</y>
+           <width>121</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Full Rooms </string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_occupiedBeds">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>240</y>
+           <width>161</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Occupied Beds</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_availableRooms">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>190</y>
+           <width>171</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Available Rooms </string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_freeBeds">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>270</y>
+           <width>111</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Free Beds</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_7">
+       <attribute name="title">
+        <string> 🍽Restaurant</string>
+       </attribute>
+       <widget class="QRadioButton" name="radio_breakfast">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>60</y>
+          <width>171</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>18</pointsize>
+          <italic>true</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(170, 85, 127);</string>
+        </property>
+        <property name="text">
+         <string>Breakfast</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">buttonGroup_2</string>
+        </attribute>
+       </widget>
+       <widget class="QRadioButton" name="radio_lunch">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>100</y>
+          <width>141</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>18</pointsize>
+          <italic>true</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Lunch</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">buttonGroup_2</string>
+        </attribute>
+       </widget>
+       <widget class="QRadioButton" name="radio_dinner">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>160</y>
+          <width>131</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>18</pointsize>
+          <italic>true</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(0, 85, 0);</string>
+        </property>
+        <property name="text">
+         <string>Dinner</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">buttonGroup_2</string>
+        </attribute>
+       </widget>
+       <widget class="QPushButton" name="pushButton">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>280</y>
+          <width>161</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+          <italic>true</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 170, 255);</string>
+        </property>
+        <property name="text">
+         <string>Confirm</string>
+        </property>
+       </widget>
+       <widget class="QListWidget" name="listWidget">
+        <property name="geometry">
+         <rect>
+          <x>480</x>
+          <y>70</y>
+          <width>351</width>
+          <height>91</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_6">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>171</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-color: rgb(0, 0, 127);
+color: rgb(116, 199, 255);</string>
+        </property>
+        <property name="text">
+         <string>Select Meal:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_7">
+        <property name="geometry">
+         <rect>
+          <x>510</x>
+          <y>20</y>
+          <width>171</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Today menu:</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="comboBox_selectDorm">
+        <property name="geometry">
+         <rect>
+          <x>750</x>
+          <y>340</y>
+          <width>101</width>
+          <height>26</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_13">
+        <property name="geometry">
+         <rect>
+          <x>730</x>
+          <y>300</y>
+          <width>181</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>18</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Select Dorm </string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="spinBox_day">
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>210</y>
+          <width>81</width>
+          <height>31</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_5">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>220</y>
+          <width>91</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>11</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Enter day:</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>  Search 🔎</string>
+       </attribute>
+       <widget class="QLineEdit" name="lineEdit_search">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>60</y>
+          <width>201</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 206, 254);</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btn_search">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>110</y>
+          <width>121</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Search</string>
+        </property>
+       </widget>
+       <widget class="QTableWidget" name="tableWidget_search">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>180</y>
+          <width>481</width>
+          <height>231</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">gridline-color: rgb(85, 85, 0);
+selection-background-color: rgb(170, 85, 127);
+alternate-background-color: rgb(170, 0, 127);</string>
+        </property>
+        <column>
+         <property name="text">
+          <string>Name </string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Age</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Id</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Room</string>
+         </property>
+        </column>
+       </widget>
+       <widget class="QLabel" name="label_14">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>10</y>
+          <width>191</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+    color: white;
+    font-weight: bold;
+    font-size: 14pt;
+    border-radius: 20px;
+    border: 2px solid white;
+
+    background: qlineargradient(
+        x1:0, y1:0,
+        x2:1, y2:1,
+        stop:0 #C084FC,
+        stop:1 #8B5CF6);
+}
+
+QPushButton:hover{
+    border: 3px solid #ffffff;
+}
+
+QPushButton:pressed{
+    background: #7C3AED;
+}</string>
+        </property>
+        <property name="text">
+         <string>Enter name of student </string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btn_displayStudents">
+        <property name="geometry">
+         <rect>
+          <x>620</x>
+          <y>50</y>
+          <width>201</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+          <italic>true</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Display Students </string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1050</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+ <buttongroups>
+  <buttongroup name="buttonGroup_2"/>
+ </buttongroups>
+</ui>
